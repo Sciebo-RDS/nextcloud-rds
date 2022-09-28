@@ -57,10 +57,10 @@ ifneq (,$(wildcard $(CURDIR)/composer.json))
 	make composer
 endif
 ifneq (,$(wildcard $(CURDIR)/package.json))
-	make npm
+	make js
 endif
 ifneq (,$(wildcard $(CURDIR)/js/package.json))
-	make npm
+	make js
 endif
 
 # Installs and updates the composer dependencies. If composer is not installed
@@ -78,18 +78,29 @@ else
 endif
 
 # Installs npm dependencies
+.PHONY: js
+js: jsinstall npm
+
+.PHONY: jsinstall
+jsinstall:
+	cd js && $(npm) install
+
 .PHONY: npm
-npm:
-ifeq (,$(wildcard $(CURDIR)/package.json))
+npm: npmbuild npminstall
+
+.PHONY: npmbuild
+npmbuild:
 	cd js && $(npm) run build
-else
-	npm run build
-endif
+
+.PHONY: npminstall
+npminstall:
+	mv js/dist/js/app.js js/ && mv js/dist/css/app.css css/
 
 # Removes the appstore build
 .PHONY: clean
 clean:
 	rm -rf ./build
+	rm -rf ./js/dist
 
 # Same as clean but also removes dependencies installed by composer, bower and
 # npm

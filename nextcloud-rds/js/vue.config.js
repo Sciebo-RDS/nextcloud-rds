@@ -24,6 +24,9 @@ module.exports = {
     plugins: [
       new Dotenv(dotenvArgs)
     ],
+    resolve: {
+      fallback: { "querystring": require.resolve("querystring-es3") }
+    }
   },
   chainWebpack: config => {
     config.optimization.splitChunks(false)

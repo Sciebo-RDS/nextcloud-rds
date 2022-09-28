@@ -1,14 +1,1 @@
-{
-    "name": "@rds/classic",
-    "version": "1.0.0",
-    "main": "src/main.js",
-    "scripts": {
-        "build": "vue-cli-service build --mode production --name app"
-    },
-    "dependencies": {
-        "@vue/cli": "^5.0.8",
-        "focus-trap-vue": "^1.1.1",
-        "owncloud-design-system": "^6.2.0",
-        "tippy.js": "^6.3.1"
-    }
-}
+{}
