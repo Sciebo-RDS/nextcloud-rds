@@ -110,6 +110,8 @@ distclean: clean
 	rm -rf node_modules
 	rm -rf js/vendor
 	rm -rf js/node_modules
+	rm js/app.js
+	rm css/app.css
 
 # Builds the source and appstore package
 .PHONY: dist
