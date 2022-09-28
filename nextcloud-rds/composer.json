@@ -1,0 +1,19 @@
+{
+	"name": "sunet/rds",
+	"description": "Access Sciebo RDS from within NextCloud",
+	"type": "project",
+	"license": "AGPL-3.0-or-later",
+	"authors": [
+		{
+			"name": "SUNET"
+		}
+	],
+    "require": {
+        "web-token/jwt-easy": "^2.2",
+        "web-token/jwt-signature-algorithm-rsa": "^2.2",
+        "web-token/jwt-key-mgmt": "^2.2",
+	      "firebase/php-jwt": "^6.3."
+    },
+	"require-dev": {
+	}
+}
