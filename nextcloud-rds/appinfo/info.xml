@@ -18,6 +18,16 @@
     <dependencies>
         <nextcloud min-version="23" max-version="24"/>
     </dependencies>
+    <settings>
+        <admin>OCA\RDS\Panels\AdminPanel</admin>
+        <admin-section>OCA\RDS\Panels\AdminSection</admin-section>
+    </settings>
+    <commands>
+        <command>OCA\RDS\Commands\CreateKeys</command>
+        <command>OCA\RDS\Commands\SetUrl</command>
+        <command>OCA\RDS\Commands\SetOauthname</command>
+        <command>OCA\RDS\Commands\Reset</command>
+    </commands>
     <navigations>
         <navigation>
             <name>R D S</name>
