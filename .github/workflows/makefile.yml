@@ -19,3 +19,12 @@ jobs:
       
     - name: Run packaging to app tar.gz
       run: cd nextcloud-rds && make appstore
+
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v3.1.0
+      with:
+        # Artifact name
+        name: nextcloud-rds.tar.gz 
+        # A file, directory or wildcard pattern that describes what to upload
+        path: '*.tar.gz'
+
