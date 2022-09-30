@@ -15,7 +15,7 @@ jobs:
     - uses: actions/checkout@v3
       
     - name: Install dependencies
-      run: make
+      run: cd nextcloud-rds && make
       
     - name: Run packaging to app tar.gz
-      run: make appstore
+      run: cd nextcloud-rds && make appstore
