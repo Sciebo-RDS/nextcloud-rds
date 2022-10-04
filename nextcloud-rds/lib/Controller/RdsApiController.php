@@ -99,7 +99,7 @@ class RdsApiController extends ApiController
                 #"quota" => $user->getQuota(),
                 #"searchTerms" => $user->getSearchTerms(),
                 #"webdav_type" => "owncloud",
-                "serverName" => $_SERVER['SERVER_NAME'],
+                "serverName" => $this->config->getSystemValue('overwritehost'),
                 "webdav" => $this->rdsService->myServerUrl() . "/remote.php/webdav",
                 #"access_token" => "", # maybe for later usage
             ];
