@@ -50,7 +50,7 @@ class AdminPanel implements ISettings
 
     public function getSection()
     {
-        return 'rds';
+        return 'additional';
     }
 
     /**

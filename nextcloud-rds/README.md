@@ -34,3 +34,12 @@ First get an account for the [App Store](http://apps.nextcloud.com/) then run:
 
 The archive is located in the directory above the one that contains the
 Makefile, and can then be uploaded to the App Store.
+
+## Enable and configure app
+
+First it is necessary to add an OAuth client for the RDS service,
+in the "security" section of the "Administration" settings.
+
+Then the app must be enabled, like any other app, in nextcloud's app management (`/settings/apps`).
+
+And then the app must be configured, in settings -> additional settings.
