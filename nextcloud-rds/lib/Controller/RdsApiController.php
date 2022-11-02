@@ -88,9 +88,9 @@ class RdsApiController extends ApiController
             $user = \OC::$server->getUserSession()->getUser();
             $data = [
                 "email" => $user->getEMailAddress(),
-                #"name" => $user->getUserName(),
+                "name" => $user->getUID(),
                 "displayName" => $user->getDisplayName(),
-                #"accountId" => $user->getAccountId(),
+                "accountId" => $user->getUID(),
                 "UID" => $user->getUID(),
                 "cloudID" => $user->getCloudId(),
                 #"lastLogin" => $user->getLastLogin(),
