@@ -29,8 +29,9 @@
     </commands>
     <navigations>
         <navigation>
-            <name>R D S</name>
+            <name>Research Data Services</name>
             <route>rds.page.index</route>
+            <icon>RDS_Logo_Weiss.svg</icon>
         </navigation>
     </navigations>
 </info>
