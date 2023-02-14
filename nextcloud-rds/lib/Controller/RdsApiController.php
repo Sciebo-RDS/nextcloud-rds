@@ -100,7 +100,7 @@ class RdsApiController extends ApiController
                 #"searchTerms" => $user->getSearchTerms(),
                 #"webdav_type" => "owncloud",
                 "serverName" => $this->config->getSystemValue('overwritehost', $_SERVER['HTTP_HOST']),
-                "webdav" => $this->rdsService->myServerUrl() . "/remote.php/webdav",
+                "webdav" => $this->config->getSystemValue('overwriteprotocol', "https") . "://" . $this->config->getSystemValue('overwritehost', $_SERVER['HTTP_HOST']) . "/remote.php/dav/files/" . $user->getUID(),
                 #"access_token" => "", # maybe for later usage
             ];
 
