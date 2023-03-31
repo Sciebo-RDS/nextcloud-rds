@@ -73,6 +73,16 @@ export default {
         "*"
       );
     },
+    // Inform RDS app that we are loading it from NextCloud rather than from any other EFSS
+    tellThisIsFromNextCloudToWindow() {
+      this.rdsWindow.postMessage(
+        JSON.stringify({
+          event: "from-nextcloud",
+          data: {},
+        }),
+        "*"
+      );
+    },
   },
   created() {
     getConfig(this).then(() => {
@@ -86,6 +96,7 @@ export default {
         var payload = JSON.parse(event.data);
         switch (payload.event) {
           case "init":
+            this.tellThisIsFromNextCloudToWindow();
             this.sendInformationsToWindow();
             break;
           case "showFilePicker":
