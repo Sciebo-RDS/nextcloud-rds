@@ -73,6 +73,7 @@ export default {
         "*"
       );
     },
+    // Inform RDS app that we are loading it from NextCloud rather than from any other EFSS
     tellThisIsFromNextCloudToWindow() {
       this.rdsWindow.postMessage(
         JSON.stringify({
