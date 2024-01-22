@@ -16,7 +16,7 @@
     <category>integration</category>
     <bugs>https://github.com/Sciebo-RDS/RDS-Connectors/issues</bugs>
     <dependencies>
-        <nextcloud min-version="23" max-version="27"/>
+        <nextcloud min-version="23" max-version="28"/>
     </dependencies>
     <settings>
         <admin>OCA\RDS\Panels\AdminPanel</admin>
