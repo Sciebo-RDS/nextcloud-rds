@@ -9,7 +9,7 @@
     <name>R D S</name>
     <summary>Access Sciebo RDS from within NextCloud</summary>
     <description><![CDATA[Access Sciebo RDS from within NextCloud]]></description>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
     <licence>agpl</licence>
     <author mail="eperez@emergya.com" homepage="https://www.sunet.se">SUNET</author>
     <namespace>RDS</namespace>
