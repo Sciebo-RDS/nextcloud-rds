@@ -47,6 +47,8 @@ class CreateKeys extends Command
             $output->writeln("Creates keys successful.");
         } else {
             $output->writeln("Cannot create keys.");
+            return 1;
         }
+        return 0;
     }
 }

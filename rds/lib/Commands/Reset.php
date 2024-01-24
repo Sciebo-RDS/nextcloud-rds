@@ -43,5 +43,6 @@ class Reset extends Command
     {
         $this->rdsService->execute_reset();
         $output->writeln("Reset executed.");
+        return 0;
     }
 }

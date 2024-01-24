@@ -49,5 +49,6 @@ class SetOauthname extends Command
         $oauthname = $input->getArgument('oauthname');
         $this->config->setAppValue($this->appName, $this->rdsService->getOauthAppField(), $oauthname);
         $output->writeln("Set <$oauthname> as oauthname successful.");
+        return 0;
     }
 }

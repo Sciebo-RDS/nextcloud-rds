@@ -49,5 +49,6 @@ class SetUrl extends Command
         $url = $input->getArgument('url');
         $this->config->setAppValue($this->appName, $this->rdsService->getUrlService()->getCloudUrlKey(), $url);
         $output->writeln("Set <$url> as cloudUrl successful.");
+        return 0;
     }
 }
