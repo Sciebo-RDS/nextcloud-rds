@@ -36,7 +36,7 @@
 #        "prebuild": "npm install && node_modules/bower/bin/bower install && node_modules/bower/bin/bower update",
 #        "build": "node node_modules/gulp-cli/bin/gulp.js"
 #    },
-version=0.0.1
+version=0.0.2
 app_name=rds
 app_dir=$(CURDIR)/$(app_name)
 build_tools_directory=$(CURDIR)/$(app_name)/build/tools
