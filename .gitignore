@@ -1,1 +1,6 @@
 rds/build
+rds/css/app.css
+rds/js/app.js
+rds/js/dist/
+rds/js/node_modules/
+rds/vendor/
