@@ -40,6 +40,7 @@ version=0.0.2
 app_name=rds
 app_dir=$(CURDIR)/$(app_name)
 build_tools_directory=$(CURDIR)/$(app_name)/build/tools
+cert_dir=$(HOME)/.nextcloud/certificates
 source_build_directory=$(CURDIR)/$(app_name)/build/artifacts/source
 source_package_name=$(source_build_directory)/$(app_name)
 appstore_build_directory=$(CURDIR)/$(app_name)/build/artifacts/appstore
