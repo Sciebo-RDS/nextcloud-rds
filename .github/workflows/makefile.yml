@@ -18,7 +18,7 @@ jobs:
       run: make
       
     - name: Run packaging to app tar.gz
-      run: make appstore
+      run: make package
 
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v3.1.0
