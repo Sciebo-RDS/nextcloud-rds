@@ -26,5 +26,5 @@ jobs:
         # Artifact name
         name: rds.tar.gz 
         # A file, directory or wildcard pattern that describes what to upload
-        path: '*.tar.gz'
+        path: 'rds/build/artifacts/appstore/*.tar.gz'
 
